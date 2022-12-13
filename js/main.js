@@ -7,4 +7,9 @@ $(function () {
         dots: true,
         autoplay: true,
     })
+
+    $('.list_slide').slick({
+        pauseOnHover: false,
+        pauseOnFocus: false,
+    })
 })

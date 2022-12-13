@@ -23,6 +23,10 @@ a {
 
 }
 
+em {
+    font-style: normal;
+}
+
 img {
     /* 이미지 사이의 간격을 없앤다 */
     vertical-align: middle;
