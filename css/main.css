@@ -1,6 +1,6 @@
-* {
+/* * {
     outline: 1px solid #366;
-}
+} */
 
 .header {
     position: absolute;
@@ -178,7 +178,7 @@
 
 .main_slide figure {
     position: relative;
-    height: 950px;
+    height: 100vh;
 }
 
 .main_slide img {
