@@ -178,12 +178,11 @@
 
 .main_slide figure {
     position: relative;
-    height: 100vh;
 }
 
 .main_slide img {
     width: 100%;
-
+    height: 100vh;
 }
 
 .main_slide .inner {
@@ -296,6 +295,8 @@
 
 .main_bn .inner img {
     width: 100%;
+    transition: 0.5s;
+
 }
 
 .main_bn .inner .itm:hover img {
@@ -401,6 +402,11 @@
     font-size: 14px;
     text-align: center;
     line-height: 60px;
+}
+
+.main_port .inner .intro ul>li.on {
+    color: #eee;
+    background: #002264;
 }
 
 .main_port .inner .list_slide figure {
@@ -679,7 +685,9 @@
 .main_PR .inner .miniwrap .left img {
     width: 100%;
     height: 100%;
+    transition: 0.5s;
 }
+
 
 .main_PR .inner .miniwrap .left .itm {
     position: relative;

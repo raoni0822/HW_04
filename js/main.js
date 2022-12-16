@@ -12,4 +12,6 @@ $(function () {
         pauseOnHover: false,
         pauseOnFocus: false,
     })
+
+    $("..main_port .inner .intro ul>li").click('on')
 })
