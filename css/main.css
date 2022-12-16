@@ -2,6 +2,11 @@
     outline: 1px solid #366;
 } */
 
+.slick-track,
+.slick-list {
+    transition-delay: 0.03s;
+}
+
 .header {
     position: absolute;
     top: 0;
@@ -390,64 +395,63 @@
 
 }
 
-.main_port .inner .intro ul {
+.main_port .inner .intro .buttons {
     display: flex;
     gap: 30px;
 }
 
-.main_port .inner .intro ul>li {
+.main_port .inner .intro button {
+    display: block;
     width: 120px;
     background: #eee;
     color: #002264;
     font-size: 14px;
     text-align: center;
     line-height: 60px;
+    border: none;
 }
 
-.main_port .inner .intro ul>li.on {
+.main_port .inner .intro button.active {
     color: #eee;
     background: #002264;
 }
 
-.main_port .inner .list_slide figure {
-    width: 585px;
-}
-
-.main_port .inner .list_slide img {
-    width: 100%;
-}
-
-.main_port .inner .list_slide .tab {
+.main_port .inner .tabs figure {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 30px;
 
     background: #fff;
 }
+
 
 .main_port::before {
     position: absolute;
     content: "";
     bottom: 0;
-    right: 50.75%;
-    width: 50%;
-    height: 72.9%;
+    left: 0;
+    width: 937px;
+    height: 511px;
 
     background: #233f76;
 
-    z-index: -999;
+
 }
 
-.main_port .inner .list_slide .tab .box {
+.main_port .inner .tabs img {
+    width: 585px;
+}
+
+.main_port .inner .tabs .container {
     flex: 1;
-
 }
 
-.main_port .inner .list_slide .tab .container {
+.main_port .inner .tabs .container {
     width: 570px;
     color: #002264;
 }
 
-.main_port .inner .list_slide .tab span {
+.main_port .inner .tabs span {
     display: block;
     font-weight: 500;
     font-size: 40px;
@@ -455,25 +459,25 @@
     margin: 0 0 40px 0;
 }
 
-.main_port .inner .list_slide .tab em {
+.main_port .inner .tabs em {
     display: block;
     font-weight: 500;
     margin: 0 0 20px 0;
 }
 
-.main_port .inner .list_slide .tab p {
+.main_port .inner .tabs p {
     color: #5a7890;
     margin: 0 0 100px 0;
     line-height: 1.2;
 }
 
-.main_port .inner .list_slide .tab a {
+.main_port .inner .tabs a {
     display: inline-block;
     padding: 20px 70px;
     border: 1px solid #002264;
 }
 
-.list_slide .slick-arrow {
+.slider .slick-arrow {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -492,7 +496,7 @@
     display: none;
 }
 
-.list_slide .slick-prev {
+.slider .slick-prev {
     transform: translate(-50%, -50%) rotate(-45deg);
     margin: 0 0 0 -615px;
 
@@ -501,13 +505,29 @@
 }
 
 
-.list_slide .slick-next {
+.slider .slick-next {
     transform: translate(-50%, -50%) rotate(135deg);
     margin: 0 0 0 615px;
 
     border-top: 4px solid #002264;
     border-left: 4px solid #002264;
 }
+
+
+
+
+
+/* /////////////////////////////////////////////// */
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+/* /////////////////////////////////////////////// */
+
 
 /* mainPortfolio} */
 
